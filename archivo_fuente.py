@@ -45,7 +45,7 @@ def crear_carpeta(carpeta1,carpeta2):
     return os.path.join(path,carpeta1,carpeta2)
 
 def guardar(archivo,directorio,nombre):
-    open(os.path.join(directorio,nombre), 'wb').write(archivo)
+    open(os.path.join(directorio,f'{nombre}.csv'), 'wb').write(archivo)
 
 guardar(descarga_museo()[0],descarga_museo()[1],descarga_museo()[2])
 guardar(descarga_cine()[0],descarga_cine()[1],descarga_cine()[2])
